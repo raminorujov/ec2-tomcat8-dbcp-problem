@@ -1,8 +1,7 @@
 # AWS Amazon Linux AMI Tomcat 8 DBCP problem solution
 
-I encountered this issue in 2018, while deploying my app on AWS EC2. 
-If you use "64bit Amazon Linux 2017.09 v2.7.5" (EC2 image ID: ami-69000209), embedded Tomcat 8 doesn't contain  DBCP database connection pool jar files, your JNDI datasource database connection will fail with the exception
-java.lang.ClassNotFoundException: org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory
+## Problem
+I encountered this issue in 2018, while deploying my app on AWS EC2. If you use "64bit Amazon Linux 2017.09 v2.7.5" (EC2 image ID: ami-69000209), embedded Tomcat 8 doesn't contain  DBCP database connection pool jar files, your JNDI datasource database connection will fail with the exception java.lang.ClassNotFoundException: org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory
 
 ## Solution steps
 ### Step1. Add the following maven dependencies( Apache Commons DBCP 2.x and  Apache Commons DBCP 2.x).
