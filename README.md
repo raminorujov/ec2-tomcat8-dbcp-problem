@@ -49,11 +49,9 @@ If you don't use Maven, you can copy commons-dbcp2-2.2.0.jar and commons-pool2-2
     </Context>
 
 Please, consider that some properties are renamed.
-
-**maxActive = maxTotal
-maxWait = maxWaitMillis
-removeAbandoned = removeAbandonedOnBorrow, removeAbandonedOnMaintenance
-**
+- maxActive = maxTotal
+- maxWait = maxWaitMillis
+- removeAbandoned = removeAbandonedOnBorrow, removeAbandonedOnMaintenance
 
 ## References:
 1.[https://forums.aws.amazon.com/thread.jspa?messageID=721145](https://forums.aws.amazon.com/thread.jspa?messageID=721145 "https://forums.aws.amazon.com/thread.jspa?messageID=721145")
